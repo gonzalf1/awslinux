@@ -2,8 +2,7 @@ FROM amazonlinux:latest
 
 #ENV http_proxy proxy.sce.com:80
 #ENV https_proxy proxy.sce.com:80
-
-sudo yum update -y
+RUN yum update -y
 
 # Install System Packages
 RUN yum install -y gcc gcc-c++ make openssl-devel aws-cli \
